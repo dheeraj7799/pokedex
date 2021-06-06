@@ -8,10 +8,10 @@ for (const k in config.versions) {
 }
 
 // * Bring up the app
-app.listen(3000, (err) => {
+app.listen(config.port, (err) => {
     if (err) {
-        console.log(`Error while bringing up the server on port 3000`);
+        console.log(`Error while bringing up the server on port ${config.port}`);
         return;
     }
-    console.log(`App is running on port 3000`);
+    console.log(`App is running on port ${config.port}`);
 });
